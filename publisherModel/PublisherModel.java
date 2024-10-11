@@ -24,6 +24,10 @@ public class PublisherModel {
 	public void setPublisherName(String publisherName) {
 		this.publisherName = publisherName;
 	}
+	@Override
+	public String toString() {
+		 return "PublisherModel{id='" + id + "', publisherName='" + publisherName + "'}";
+	}
 	
 
 }
