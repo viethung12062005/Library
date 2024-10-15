@@ -1,10 +1,9 @@
 package publisherDao;
 
 import java.util.List;
-
-import publisherModel.PublisherModel;
+import publisherModel.Publisher;
 
 // TanDao
 public interface PublisherDao {
-	List <PublisherModel> getAll();
+    List<Publisher> getAll();
 }

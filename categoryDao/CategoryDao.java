@@ -1,7 +1,7 @@
 package categoryDao;
-import categoryModel.CategoryModel;
+import categoryModel.Category;
 import java.util.List;
 
 public interface CategoryDao {
-		List<CategoryModel> getAll();
+		List<Category> getAll();
 }
