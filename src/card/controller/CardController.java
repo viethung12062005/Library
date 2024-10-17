@@ -125,24 +125,18 @@ public class CardController {
     }
 
     public int searchCardUnActive(String key, DefaultTableModel modelTable) {
-        if (modelTable == null) {
-            return RESULT_NULL_POINT;
-        }
-        return model.searchCardUnActive(key, modelTable);
+
+        return 0;
     }
 
     public int searchCardActive(String key, DefaultTableModel modelTable) {
-        if (modelTable == null || key == null) {
-            return RESULT_NULL_POINT;
-        }
-        return model.searchAllCardActiveByKey(key, modelTable);
+
+        return 0;
     }
 
     public int deActiveCard(String cardNo) {
-        if (StringUtils.isNullOrEmpty(cardNo)) {
-            return RESULT_NULL_POINT;
-        }
-        return model.deActiveCard(cardNo);
+
+        return 0;
     }
      /**
       * Dùng để cập nhật thông tin thẻ mượn
@@ -154,14 +148,7 @@ public class CardController {
       *         3 nếu cập nhật thất bại , do lỗi kết nối csdl
       */
     public int updateCard(String cardNo, Date expired) {
-        if (expired == null || StringUtils.isNullOrEmpty(cardNo)) {
-            return RESULT_NULL_POINT;
 
-        }
-        if (expired.before(new Date(System.currentTimeMillis()))) {
-            System.out.println("Hello");
-            return RESULT_EXPRIED_FAIL;
-        }
-        return model.updateCard(cardNo, new java.sql.Date(expired.getTime()));
+        return 0;
     }
 }
