@@ -32,6 +32,9 @@ public class Publisher {
 	public String toString() {
 		 return "PublisherModel{id='" + id + "', publisherName='" + publisherName + "'}";
 	}
+	public List getAll() {
+		return MysqlPublisherDao.getInstance().getAll();
+	}
 	
 
 }
