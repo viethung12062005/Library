@@ -7,29 +7,17 @@ package book.model;
 
 import book.dao.BookDao;
 import book.dao.MysqlBookDao;
-import bookcopy.model.BookCopy;
 import category.model.Category;
 import publisher.model.Publisher;
-
+import BookCopy.BookCopy;
 import java.util.List;
 
 
 public class Book {
 
     private String id;
-    private List<BookCopy> listCopies;
 
-    public List<BookCopy> getListCopies() {
-        return listCopies;
-    }
-    private Book(BookBuilder builder) {
-        this.id = builder.id;
-        this.title = builder.title;
-        this.author = builder.author;
-        this.publisher = builder.publisher;
-        this.category = builder.category;
-        this.listCopies = builder.listCopies;
-    }
+
 
     public String getId() {
         return id;
@@ -103,16 +91,7 @@ public class Book {
         return MysqlBookDao.getInstance();
     }
 
-    /**
-     * Tìm kiếm sách theo mã sách, tiêu đề, tác giả, nhà xuất bản, thể loại
-     *
-     * @param id Mã sách
-     * @param title Tiêu đề
-     * @param author Tác giả
-     * @param publish Nhà xuất bản
-     * @param category Thể loại sách
-     * @return Danh sách các sách thỏa mãn yêu cầu tìm kiếm
-     */
+
 
     public List<Book> searchBook_Registe(String idSearch, String titleSearch, String authorSearch, String publishSearch, String categorySearch) {
         return bookDao().searchBook_Registe(idSearch, titleSearch, authorSearch, publishSearch, categorySearch);

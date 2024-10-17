@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package util;
 
 import java.sql.Date;
@@ -17,12 +13,7 @@ public class Utils {
         return formatter.format(date);
     }
 
-    /**
-     * chuyển đổi Date ở dạng java.util.Date sang java.sql.Date.
-     *
-     * @param date : Date cần chuyển
-     * @return kết quả chuyển dạng java.sql.Date.
-     */
+
     public static Date convertDate(java.util.Date date) {
         return date != null ? new Date(date.getTime()) : null;
     }
@@ -55,8 +46,4 @@ public class Utils {
         return phone.matches(phone_pattern);
     }
 
-    public static void main(String[] args) {
-        System.out.println(isAdressEmail("vukien@gma@il.com"));
-        System.out.println(isPhoneNumber("0947176093"));
-    }
 }

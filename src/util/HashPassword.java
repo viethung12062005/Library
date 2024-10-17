@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package util;
 
 import java.security.MessageDigest;
@@ -12,12 +8,6 @@ import java.util.logging.Logger;
 
 
 public class HashPassword {
-    /**
-     * algorithm to hash password of user
-     * @param password The password to hash
-     * @return Hash String of password
-     * @exception NoSuchAlgorithmException if system not find md5 algorithm.
-     */
     public static String hashPass(String password){
         StringBuilder hexString = new StringBuilder();
     	

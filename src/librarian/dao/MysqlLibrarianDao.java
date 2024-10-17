@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package librarian.dao;
 
 import librarian.controller.LibrarianController;
@@ -22,10 +18,7 @@ import static user.dao.MysqlAccountDao.*;
 import static user.dao.MysqlUserDao.RESULT_SQLITE;
 import static user.dao.MysqlUserDao.RESULT_SUCCESS;
 
-/**
- *
- * @author Linh
- */
+
 public class MysqlLibrarianDao implements LibrarianDao {
     
     private static MysqlLibrarianDao instance;
