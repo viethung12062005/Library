@@ -119,15 +119,7 @@ public class CardController {
 
         return 0;
     }
-     /**
-      * Dùng để cập nhật thông tin thẻ mượn
-      * @param cardNo mã thẻ mượn
-      * @param expired hạn sử dụng thẻ
-      * @return 0 nếu thiếu 1 hoặc 1 số trường 
-      *         1 nếu hạn sử dụng muốn cập nhật không hợp lệ
-      *         2 nếu cập nhật thành công
-      *         3 nếu cập nhật thất bại , do lỗi kết nối csdl
-      */
+
     public int updateCard(String cardNo, Date expired) {
 
         return 0;
