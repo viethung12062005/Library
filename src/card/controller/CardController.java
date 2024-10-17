@@ -107,7 +107,6 @@ public class CardController {
     }
 
     public int searchCardUnActive(String key, DefaultTableModel modelTable) {
-
         return 0;
     }
 

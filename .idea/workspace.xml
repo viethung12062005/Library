@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ae98437-ca70-4e80-8df7-f906d2bf4755" name="Changes" comment="Hung">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/card/controller/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/card/controller/CardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/publisher/dao/MysqlPublisherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/publisher/dao/MysqlPublisherDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729179179217</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Hung">
+      <option name="closed" value="true" />
+      <created>1729179482692</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729179482692</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Hung">
+      <option name="closed" value="true" />
+      <created>1729179594195</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729179594195</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
