@@ -50,10 +50,5 @@ public class MysqlPublisherDao implements PublisherDao {
         return new Publisher(rs.getString(COLUMN_ID), rs.getString(COLUMN_PUBLISHER));
 
     }
-    
-    public static void main(String[] args) {
-        MysqlPublisherDao mpd = new MysqlPublisherDao();
-        System.out.println(mpd.getAll());
-    }
 
 }
