@@ -62,18 +62,7 @@ public class CardController {
         return String.valueOf(code);
     }
     
-    /**
-     * Dùng để kích hoạt thẻ thành viên
-     * @param idUser mã độc giả
-     * @param actDate ngày kích hoạt
-     * @param expiredDate ngày hết hạn
-     * @param codeActivate  mã kích hoạt thẻ
-     * @param cardNo        mã thẻ được cung cấp bởi hệ thống
-     * @return  1 nếu có trường thông tin nào đó thiếu
-     *          0 nếu hạn của thẻ là không hợp lệ(hạn thẻ trước thời gian kích hoạt)
-     *          2 nếu kích hoạt thành công
-     *          3 nếu lỗi kết nối csdl
-     */
+ 
     public int activateCard(String idUser, Date actDate, Date expiredDate, String codeActivate, String cardNo) {
         return 0;
     }
@@ -93,11 +82,7 @@ public class CardController {
     public int getStatusCardById(String idCard) {
         return model.getStatusCardById(idCard);
     }
-    /**
-     * Lấy ra số lượng sách độc giả mượn đã quá hạn theo mã thẻ mượn
-     * @param idCard mã thẻ mượn
-     * @return số lượng sách quá hạn của độc giả 
-     */
+
     public int checkUseOverDueBookCopy(String idCard) {
         return model.checkUserOverDueBookCopy(idCard);
     }
